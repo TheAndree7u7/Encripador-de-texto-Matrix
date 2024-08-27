@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>Encriptador del texto</title>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/matrix.css" />
+  </head>
+
+  <body>
+    <!-- Fondo -->
+    <canvas id="canvas"></canvas>
+    <div id="content">
+      <!-- Encabezado -->
+
+      <header>
+        <a href="#" rel="">
+          <img
+            src="images/logo.svg"
+            alt="Logo de Alura"
+            width="100"
+            height="100"
+          />
+        </a>
+      </header>
+      <!-- Principal -->
+      <main>
+        <!--  En esta parte estara el contenido a encriptar -->
+        <section class="encriptador">
+          <textarea
+            class="encriptar"
+            placeholder="Ingrese el texto aquí"
+          ></textarea>
+          <div class="encriptador-aviso">
+            <img src="images/aviso.svg" alt="Imagen Aviso" class="img-aviso" />
+            <p class="texto-aviso">Solo letras minúsculas y sin acentos</p>
+          </div>
+          <div class="encriptador-contenedor">
+            <button type="submit" class="btn-encriptar">Encriptar!</button>
+            <button type="submit" class="btn-desencriptar">
+              Desencriptar!
+            </button>
+          </div>
+        </section>
+        <!-- En esta parte estar del contenido    -->
+        <section class="tarjeta">
+          <!-- Aca se puede ver el resultado del encriptador -->
+          <div class="tarjeta-contenedor">
+            <img
+              src="images/muneco.svg"
+              alt="Imagen Muñeco"
+              class="img-muñeco"
+            />
+            <p class="texto-uno">No se ingreso ningun mensaje</p>
+            <p class="texto-dos">
+              Ingrese el texto que deseas encriptar o desencriptar
+            </p>
+          </div>
+          <!-- Estos son los botones  -->
+          <textarea type="mensaje" class="evaluar" readonly></textarea>
+          <button type="submit" class="btn-copiar">Copiar</button>
+        </section>
+      </main>
+    </div>
+    <!-- Pie de Página -->
+    <footer>
+        <p class="copyright">&copy; 2024 Encriptador de Texto - TheAndree7u7</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/andree-salazar/" target="_blank" rel="noopener noreferrer">
+            <img src="images/linkedin.svg" alt="LinkedIn" class="linked" />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="images/github.svg" alt="GitHub" class="git" />
+          </a>
+        </div>
+      </footer>
+    <script src="./js/encriptador.js"></script>
+    <script src="./js/matrix.js"></script>
+  </body>
+</html>

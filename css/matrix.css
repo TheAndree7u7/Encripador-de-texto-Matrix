@@ -1,0 +1,84 @@
+/* matrix-style.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+#canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#content {
+    position: relative;
+    z-index: 1;
+}
+/* Estilos generales (mantener los existentes) */
+
+/* Modificaciones para el logo */
+header img {
+    filter: brightness(0) saturate(100%) invert(80%) sepia(100%) saturate(436%) hue-rotate(86deg) brightness(119%) contrast(1000%);
+    transition: all 0.3s ease;
+}
+
+header img:hover {
+    filter: brightness(0) saturate(100%) invert(80%) sepia(74%) saturate(436%) hue-rotate(86deg) brightness(150%) contrast(150%);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Modificaciones para el icono de aviso */
+.img-aviso {
+    filter: brightness(0) saturate(100%) invert(80%) sepia(74%) saturate(436%) hue-rotate(86deg) brightness(119%) contrast(119%);
+    animation: glitch 5s infinite;
+    filter: hue-rotate();
+}
+
+/* Modificaciones para el muñeco */
+.img-muñeco {
+    filter: brightness(0) saturate(100%) invert(80%) sepia(30%) saturate(50%) hue-rotate(86deg) brightness(119%) contrast(119%);
+    animation: glitch 5s infinite;
+    filter : invert(4100%);
+    filter:grayscale(200%);
+}
+
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-5px, 5px); }
+    40% { transform: translate(-5px, -5px); }
+    60% { transform: translate(5px, 5px); }
+    80% { transform: translate(5px, -5px); }
+    100% { transform: translate(0); }
+}
+
+/* Estilos para los iconos de redes sociales en el footer */
+
+
+footer img:hover {
+    filter: brightness(0) saturate(100%) invert(80%) sepia(74%) saturate(436%) hue-rotate(86deg) brightness(150%) contrast(150%);
+    animation: matrixGlow 1.5s infinite;
+}
+
+@keyframes matrixGlow {
+    0% { filter: brightness(0) saturate(100%) invert(80%) sepia(74%) saturate(436%) hue-rotate(86deg) brightness(119%) contrast(119%) drop-shadow(0 0 2px #00FF00); }
+    50% { filter: brightness(0) saturate(100%) invert(80%) sepia(74%) saturate(436%) hue-rotate(86deg) brightness(150%) contrast(150%) drop-shadow(0 0 5px #00FF00); }
+    100% { filter: brightness(0) saturate(100%) invert(80%) sepia(74%) saturate(436%) hue-rotate(86deg) brightness(119%) contrast(119%) drop-shadow(0 0 2px #00FF00); }
+}
+
+/* Estilo adicional para el texto del copyright */
+.copyright {
+    color: #00FF00;
+    text-shadow: 0 0 5px #00FF00;
+}
